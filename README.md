@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repository contains the implementation and experimental framework for studying **Large Language Model (LLM) agent reviewer dynamics** in an Elo-ranked review system. We simulate a multi-agent system where LLM-powered reviewers with distinct personas engage in multiple rounds of paper review interactions, moderated by an Area Chair agent.
+This repository contains the implementation for studying **Large Language Model (LLM) agent reviewer dynamics** in an Elo-ranked review system. We simulate a multi-agent system where LLM-powered reviewers with distinct personas engage in multiple rounds of paper review interactions, moderated by an Area Chair agent.
 
 ---
 
