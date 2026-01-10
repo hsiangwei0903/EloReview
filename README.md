@@ -40,6 +40,7 @@ This repository contains the implementation for studying **Large Language Model 
 ```
 EloReview/
 ├── main.py                    # Main entry point for running simulations
+├── papers.json                # Paper dataset for review simulation
 ├── prompt/                    # LLM prompts for agents
 │   ├── ac.txt                # Area Chair agent prompt
 │   ├── reviewer.txt           # Reviewer agent prompt
@@ -71,37 +72,12 @@ python main.py
 ```
 
 This will:
-- Load or create sample papers
+- Load papers from `papers.json`
 - Initialize LLM agent reviewers with different personas
 - Run multiple rounds of reviews
 - Aggregate results and generate analysis
 
-### 2. Using Your Own Paper Data
-
-Prepare a JSON file with your papers (e.g., `papers.json`):
-
-```json
-[
-  {
-    "id": "paper_001",
-    "url": "https://openreview.net/forum?id=...",
-    "actual_rating": 7.5
-  },
-  {
-    "id": "paper_002",
-    "url": "https://openreview.net/forum?id=...",
-    "actual_rating": 6.8
-  }
-]
-```
-
-Modify `main.py` to load your data:
-
-```python
-papers = load_papers_from_file('papers.json')
-```
-
-### 3. Customize Simulation Parameters
+### 2. Customize Simulation Parameters
 
 In `main.py`, you can configure:
 
