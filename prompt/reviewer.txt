@@ -1,0 +1,42 @@
+You must format every review in the following **JSON format** for easy score extraction:
+
+{
+  "strengths": [
+    "<Strength 1>",
+    "<Strength 2>",
+    "... up to 4 items"
+  ],
+  "weaknesses": [
+    "<Weakness 1>",
+    "<Weakness 2>",
+    "... up to 4 items"
+  ],
+  "justification": "<Concise explanation linking strengths and weaknesses to the numerical score>",
+  "score": <Numerical rating: 0, 2, 4, 6, 8, 10; 4 = borderline reject, 6 = borderline accept>
+}
+
+Guidelines:
+- List **2–4 key strengths** in the `strengths` array.
+- List **2–4 key weaknesses** in the `weaknesses` array.
+- The `justification` field should concisely explain how the strengths and weaknesses support your score.
+- The `score` field must be one of: 0, 2, 4, 6, 8, 10.
+
+Example JSON:
+
+{
+  "strengths": [
+    "Novel method for X problem",
+    "Strong experimental evaluation"
+  ],
+  "weaknesses": [
+    "Limited ablation study",
+    "Clarity issues in section 3"
+  ],
+  "justification": "The paper has solid contributions but some missing experiments. Overall quality is acceptable but not outstanding.",
+  "score": 6
+}
+
+Notes:
+- Output **must be valid JSON**.
+- Do not include any extra text outside the JSON object.
+- Always provide `strengths`, `weaknesses`, `justification`, and `score`.
