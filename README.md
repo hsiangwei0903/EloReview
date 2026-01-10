@@ -28,7 +28,6 @@ This repository contains the implementation and experimental framework for study
    ```
 
 3. **Set up your API key**:
-   - Get a free API key from [Google AI Studio](https://aistudio.google.com/apikey)
    - Open `main.py` and add your API key:
      ```python
      GEMINI_API_KEY = "your-api-key-here"
