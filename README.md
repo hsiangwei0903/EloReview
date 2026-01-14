@@ -95,10 +95,13 @@ num_papers_per_round = 2    # Papers reviewed per round
 If you use this work in your research, please cite:
 
 ```bibtex
-@article{eloreview2026,
-  title={Modeling LLM Agent Reviewer Dynamics in Elo-Ranked Review System},
-  author={[Author Names]},
-  journal={[Conference/Journal Name]},
-  year={2026}
+@misc{huang2026modelingllmagentreviewer,
+      title={Modeling LLM Agent Reviewer Dynamics in Elo-Ranked Review System}, 
+      author={Hsiang-Wei Huang and Junbin Lu and Kuang-Ming Chen and Jenq-Neng Hwang},
+      year={2026},
+      eprint={2601.08829},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2601.08829}, 
 }
 ```
